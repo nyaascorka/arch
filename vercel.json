@@ -13,7 +13,7 @@
         },
         {
             "src": "/",
-            "dest": "views/index.pug"
+            "dest": "views/index.html"
         },
         {
             "src": "/(.+)",
