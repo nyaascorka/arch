@@ -2,13 +2,13 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+app.set('views', './views');
+app.set('view engine', 'pug');
+
 app.get('/', (_, res) => {
-  res.send(`[
-    {'d': '00:01', 'n': 'Huurmoonec', 'm': 'Азъ купило торт в честь дня рождения Профа!'},
-    {'t': '2024/04/24', 'd': '00:00', 'n': 'Huurmoonec', 'm': 'Азъ создало бурмунгелятора!'},
-  ]`)
+  res.render('index', {test: 'testostring', id: 200});
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on ${port}`);
 });
