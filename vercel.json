@@ -8,16 +8,8 @@
     ],
     "routes":[
         {
-            "src": "/api/(.*)",
-            "dest": "index.js"
-        },
-        {
             "src": "/",
-            "dest": "views/index.html"
-        },
-        {
-            "src": "/(.+)",
-            "dest": "public/$1"
+            "dest": "index.js"
         }
     ]
 }
